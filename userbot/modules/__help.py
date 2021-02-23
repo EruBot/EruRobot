@@ -27,10 +27,10 @@ logging.basicConfig(
     level=logging.WARNING)
 
 
-@register(outgoing=True, pattern=r"^\.tot")
+@register(outgoing=True, pattern=r"^\.helpme")
 async def yardim(event):
     try:
-        tgbotusername = @erruuu
+        tgbotusername = BOT_USERNAME
         if tgbotusername is not None:
             results = await event.client.inline_query(tgbotusername, "@UserButt")
             await results[0].click(

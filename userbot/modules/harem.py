@@ -25,18 +25,8 @@ async def typewriter(typew):
     await typew.edit("/protecc mordred nitocris gorgon paul benienma mecha elisabeth gray jack marie anastasia passionlip")
     sleep(0)
     await typew.edit("/protecc scheherazade semiramis salome lakshmibai valkyrie anne da fujino nagao")
-    sleep(1)
-    await typew.edit("udah")
-    sleep(1)
-    await typew.edit("udahhh")
-# Owner @erruuu - @salama219
-
-
-@register(outgoing=True, pattern='^xx(?: |$)(.*)')
-async def typewriter(typew):
-    typew.pattern_match.group(1)
-    sleep(0)
-    await typew.edit("/protecc mysterious heroine x xx")
+    sleep(0.3)
+    await typew.edit("/protecc")
 # Owner @erruuu - @salama219
 
 
@@ -44,16 +34,20 @@ async def typewriter(typew):
 async def typewriter(typew):
     typew.pattern_match.group(1)
     sleep(0)
-    await typew.edit("/protecc hikari oono kirigaya mio atago gaen araragi chisa yuuna izumi izuna nao ruka rikka erice erika chihiro nakano uesugi yui yukino hanyuu medusa mito mii boudica akari tomoe mami papi kagome beatrice eru kyons sister sae cabashira ichinose rias kanao akeno futaba koneko meteora aoko kyouko shinku youmu ryouko asuna haruhi natsumi lelei margaret")
+    await typew.edit("/protecc hikari oono kirigaya mio atago gaen araragi chisa yuuna izumi izuna nao ruka rikka erice erika chihiro nakano uesugi yui yukino hanyuu medusa mito mii boudica akari")
+    sleep(0)
+    await typew.edit("/protecc tomoe mami papi kagome beatrice eru kyons sister sae cabashira ichinose rias kanao akeno futaba koneko meteora aoko kyouko shinku youmu ryouko asuna haruhi natsumi lelei margaret")
+    sleep(0.3)
+    await typew.edit("/protecc")
 # Owner @erruuu - @salama219
 
 
 CMD_HELP.update({
     "harem":
-    "`mash`\
+    "`/p`\
 \nUsage: Protecc servant (v.2).\
-\n\n`nana`\
+\n\n`/n`\
 \nUsage: Protecc loli (v.1).\
-\n\n`xx`\
-\nUsage: Protecc servant char mysterious."
+\n\n`?????`\
+\nUsage: blm ada."
 })

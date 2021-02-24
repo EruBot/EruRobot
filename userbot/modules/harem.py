@@ -44,9 +44,9 @@ async def typewriter(typew):
 
 CMD_HELP.update({
     "harem":
-    "`/p`\
+    "`.m`\
 \nUsage: Protecc servant (v.2).\
-\n\n`/n`\
+\n\n`.n`\
 \nUsage: Protecc loli (v.1).\
 \n\n`?????`\
 \nUsage: blm ada."

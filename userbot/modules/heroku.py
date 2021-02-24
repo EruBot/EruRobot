@@ -129,7 +129,7 @@ async def dyno_usage(dyno):
     """
         Get your account Dyno Usage
     """
-    await dyno.edit("`Getting Information...`")
+    await dyno.edit("`Tunggu bentar...`")
     useragent = (
         'Mozilla/5.0 (Linux; Android 10; SM-G975F) '
         'AppleWebKit/537.36 (KHTML, like Gecko) '
@@ -179,13 +179,13 @@ async def dyno_usage(dyno):
             AppMinutes = math.floor(AppQuotaUsed % 60)
 
             await dyno.edit(
-                "**Dyno Usage**:\n\n╭━━━━━━━━━━━━━━━━━━━━╮\n"
-                f"-> `Penggunaan Dyno `  **{app.name}**:\n"
-                f"    •**{AppHours} jam - "
+                "**Dyno Usage** ➧\n\n╭━━━━━━━━━━━━━━━━━━━━╮\n"
+                f"➧➧ `Penggunaan Dyno Pada Bot Ini`  ****:\n"
+                f"    ➧ **{AppHours} jam - "
                 f"{AppMinutes} menit  -  {AppPercentage}%**"
                 "\n ◐━─━─━─━─━──━─━─━─━─━◐\n"
-                "-> `Sisa Dyno Bulan Ini`:\n"
-                f"    •**{hours} jam - {minutes} menit  "
+                "➧➧ `Sisa Dyno Bulan Ini`:\n"
+                f"    ➧ **{hours} jam - {minutes} menit  "
                 f"-  {percentage}%**\n"
                 "╰━━━━━━━━━━━━━━━━━━━━╯"
             )

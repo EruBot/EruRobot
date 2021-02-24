@@ -35,8 +35,8 @@ async def help(event):
         string = ""
         for i in CMD_HELP:
             string += "`" + str(i)
-            string += "`\t⚙ "
-        await event.reply(f"⚙{string}⚙"
+            string += "`\t➖ "
+        await event.reply(f"➖{string}➖"
                           "\n➖➖➖➖➖➖➖➖➖➖➖➖➖➖\
                           \n   __MOD BY__ : ERUBOT ----")
         await asyncio.sleep(100)

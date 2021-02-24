@@ -27,7 +27,7 @@ async def gen_chlog(repo, diff):
     ch_log = ''
     d_form = "%d/%m/%y"
     for c in repo.iter_commits(diff):
-        ch_log += f'•[{c.committed_datetime.strftime(d_form)}]: {c.summary} <erruuu>\n'
+        ch_log += f'•[{c.committed_datetime.strftime(d_form)}]: {c.summary} erruuu\n'
     return ch_log
 
 
@@ -98,7 +98,7 @@ async def deploy(event, repo, ups_rem, ac_br, txt):
         if BOTLOG:
             await event.client.send_message(
                 BOTLOG_CHATID, "#NOTE \n"
-                "OK N0N3 -- UserBot Berhasil Di Update")
+                "OK EruBot -- UserBot Berhasil Di Update")
 
     else:
         await event.edit('`[HEROKU]:'
@@ -117,7 +117,7 @@ async def update(event, repo, ups_rem, ac_br):
     await update_requirements()
     await event.edit('`**NONE ---** Berhasil Di Update!`')
     await asyncio.sleep(1)
-    await event.edit('`N0N3 Di Restart....`')
+    await event.edit('`EruBot Di Restart....`')
     await asyncio.sleep(1)
     await event.edit('`Silahkan Tunggu Beberapa Detik!`')
     await asyncio.sleep(10)
@@ -126,7 +126,7 @@ async def update(event, repo, ups_rem, ac_br):
     if BOTLOG:
         await event.client.send_message(
             BOTLOG_CHATID, "#NOTICE \n"
-            "OK Bot N0N3 --- Berhasil Di Update")
+            "OK Bot EruBot --- Berhasil Di Update")
         await asyncio.sleep(10)
         await event.delete()
 
@@ -188,7 +188,7 @@ async def upstream(event):
 
     if changelog == '' and force_update is False:
         await event.edit(
-            f'\n`BOT N0N3 --- \n` sudah **versi terbaru**\n`BRANCH:`**{UPSTREAM_REPO_BRANCH}**\n')
+            f'\n`BOT EruBot --- \n` sudah **versi terbaru**\n`BRANCH:`**MASTER**\n')
         await asyncio.sleep(15)
         await event.delete()
         return repo.__del__()
@@ -214,10 +214,10 @@ async def upstream(event):
         await event.edit(
             '`Force-Syncing to latest stable userbot code, please wait...`')
     else:
-        await event.edit('`Proses Update N0N3 ---, ....🛠️`')
-        await event.edit('`Proses Update N0N3 ---, loading....🛠️`')
-        await event.edit('`Proses Update N0N3 ---, updating....🛠️`')
-        await event.edit('`Proses Update N0N3 ---, silahkan tunggu....🛠️`')
+        await event.edit('`Proses Update EruBot ---, ....🛠️`')
+        await event.edit('`Proses Update EruBot ---, loading....🛠️`')
+        await event.edit('`Proses Update EruBot ---, updating....🛠️`')
+        await event.edit('`Proses Update EruBot ---, silahkan tunggu....🛠️`')
     if conf == "now":
         await update(event, repo, ups_rem, ac_br)
         await asyncio.sleep(10)

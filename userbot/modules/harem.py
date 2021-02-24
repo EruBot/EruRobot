@@ -8,7 +8,7 @@ DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else uname().node
 # ============================================
 
 
-@register(outgoing=True, pattern='^mash(?: |$)(.*)')
+@register(outgoing=True, pattern='^/m(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
     sleep(0)
@@ -30,7 +30,7 @@ async def typewriter(typew):
 # Owner @erruuu - @salama219
 
 
-@register(outgoing=True, pattern='^nana(?: |$)(.*)')
+@register(outgoing=True, pattern='^/n(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
     sleep(0)
@@ -44,9 +44,9 @@ async def typewriter(typew):
 
 CMD_HELP.update({
     "harem":
-    "`.m`\
+    "`/m`\
 \nUsage: Protecc servant (v.2).\
-\n\n`.n`\
+\n\n`/n`\
 \nUsage: Protecc loli (v.1).\
 \n\n`?????`\
 \nUsage: blm ada."

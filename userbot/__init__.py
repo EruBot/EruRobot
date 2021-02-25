@@ -386,7 +386,7 @@ with bot:
         @tgbot.on(events.NewMessage(pattern="/start"))
         async def handler(event):
             if event.message.from_id != uid:
-                await event.reply("Hai, [erubot](https://t.me/EruBotLegend) \nHanya bisa digunakan oleh [erruuu](https://t.me/erruuu) 😋")
+                await event.reply("Hai, [EruBot](https://t.me/EruLegendBot) ini \nHanya bisa digunakan oleh [erruuu](https://t.me/erruuu) 😋")
             else:
                 await event.reply(f"`Hey there {ALIVE_NAME}\n\nI work for you :)`")
 
@@ -414,7 +414,7 @@ with bot:
                     link_preview=True)
             else:
                 result = builder.article(
-                    "NONE ---",
+                    "EruBot ---",
                     text="""Anda dapat mengubah akun Anda menjadi bot dan menggunakannya. Ingat, Anda tidak dapat mengelola bot orang lain! Semua detail instalasi dijelaskan dari alamat GitHub di bawah ini.""",
                     buttons=[
                         [
@@ -427,6 +427,27 @@ with bot:
                     ],
                     link_preview=False,
                 )
+
+# Tes Inline Mode Bagian 2
+                result = builder.article(
+                    "Admi in",
+                    text="""List of Groups.""",
+                    buttons=[
+                        [
+                            custom.Button.url(
+                                "Anime Lovers Indo",
+                                "https://t.me/grup_anime_indo"),
+                    ],
+                    buttons=[
+                        [
+                            custom.Button.url(
+                                "Cerita Anime Indonesia",
+                                "https://t.me/animeeindonesia"),
+                    ],
+                    link_preview=False,
+                )
+# End Inline Mode Bagian 2
+
             await event.answer([result] if result else None)
 
         @tgbot.on(

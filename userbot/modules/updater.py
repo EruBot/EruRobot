@@ -126,7 +126,7 @@ async def update(event, repo, ups_rem, ac_br):
     if BOTLOG:
         await event.client.send_message(
             BOTLOG_CHATID, "#NOTICE \n"
-            "OK Bot EruBot --- Berhasil Di Update")
+            "Yosh EruBot --- Berhasil Di Update")
         await asyncio.sleep(10)
         await event.delete()
 

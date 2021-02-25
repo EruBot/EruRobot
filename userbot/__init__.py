@@ -414,40 +414,36 @@ with bot:
                     link_preview=True)
             else:
                 result = builder.article(
-                    "EruBot ---",
-                    text="""Anda dapat mengubah akun Anda menjadi bot dan menggunakannya. Ingat, Anda tidak dapat mengelola bot orang lain! Semua detail instalasi dijelaskan dari alamat GitHub di bawah ini.""",
-                    buttons=[
-                        [
-                            custom.Button.url(
-                                "GitHub Repo",
-                                "https://github.com/meareyou/lel_remake_UserBoto"),
-                            custom.Button.url(
-                                "group",
-                                "https://t.me/grup_anime_indo")],
-                    ],
-                    link_preview=False,
-                )
-
-# Tes Inline Mode Bagian 2
-                result = builder.article(
-                    "Admi in",
-                    text="""List of Groups.""",
+                    "Info Erruuu",
+                    text="""List of Groups and Channel.""",
                     buttons=[
                         [
                             custom.Button.url(
                                 "Anime Lovers Indo",
-                                "https://t.me/grup_anime_indo"),
-                    ],
-                    buttons=[
+                                "https://t.me/grup_anime_indo")],
                         [
                             custom.Button.url(
                                 "Cerita Anime Indonesia",
-                                "https://t.me/animeeindonesia"),
+                                "https://t.me/animeeindonesia")],
+                        [
+                            custom.Button.url(
+                                "Grup Wibu Otaku",
+                                "https://t.me/wibu007")],
+                        [
+                            custom.Button.url(
+                                "Wibu schools & clubs IDN",
+                                "https://t.me/wibuschool")],
+                      [
+                            custom.Button.url(
+                                "Random Anime Indonesia",
+                                "https://t.me/randomnimeindo")],
+                      [
+                            custom.Button.url(
+                                "Channel Jujutsu Kaisen",
+                                "https://t.me/anime_jujutsu_kaisen")],
                     ],
                     link_preview=False,
                 )
-# End Inline Mode Bagian 2
-
             await event.answer([result] if result else None)
 
         @tgbot.on(

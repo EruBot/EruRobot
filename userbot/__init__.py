@@ -420,24 +420,24 @@ with bot:
                         [
                             custom.Button.url(
                                 "Anime Lovers Indo",
-                                "https://t.me/grup_anime_indo")],
-                        [
+                                "https://t.me/grup_anime_indo"),
+
                             custom.Button.url(
                                 "Cerita Anime Indonesia",
-                                "https://t.me/animeeindonesia")],
-                        [
+                                "https://t.me/animeeindonesia"),
+
                             custom.Button.url(
                                 "Grup Wibu Otaku",
-                                "https://t.me/wibu007")],
-                        [
+                                "https://t.me/wibu007"),
+
                             custom.Button.url(
                                 "Wibu schools & clubs IDN",
-                                "https://t.me/wibuschool")],
-                      [
+                                "https://t.me/wibuschool"),
+
                             custom.Button.url(
                                 "Random Anime Indonesia",
-                                "https://t.me/randomnimeindo")],
-                      [
+                                "https://t.me/randomnimeindo"),
+
                             custom.Button.url(
                                 "Channel Jujutsu Kaisen",
                                 "https://t.me/anime_jujutsu_kaisen")],

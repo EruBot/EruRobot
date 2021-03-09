@@ -103,7 +103,7 @@ async def kang(args):
         f_name = user.first_name
         packname = f"sticker_by_{u_name}_{pack}X"
         custom_packnick = f"{custompack}" or f"{f_name}"
-        packnick = f"{custom_packnick} Vol.{pack}"
+        packnick = f"Anime Sticker Pack"
         cmd = "/newpack"
         file = io.BytesIO()
 
@@ -135,7 +135,7 @@ async def kang(args):
                 while "120" in x.text:
                     pack += 1
                     packname = f"sticker_by_{u_name}_{pack}X"
-                    packnick = f"{custom_packnick} Vol.{pack}"
+                    packnick = f"Anime Sticker Pack"
                     await args.edit(
                         "`Switching to Pack "
                         + str(pack)

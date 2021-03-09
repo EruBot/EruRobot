@@ -37,7 +37,7 @@ KANGING_STR = [
 ]
 
 
-@register(outgoing=True, pattern=r"^\.(?:k|kang)\s?(.)?")
+@register(outgoing=True, pattern=r"^\.(?:kng|kang)\s?(.)?")
 async def kang(args):
     user = await bot.get_me()
     if not user.username:
@@ -101,9 +101,9 @@ async def kang(args):
 
         u_name = user.username
         f_name = user.first_name
-        packname = f"AnimeSticker{pack}"
+        packname = f"{u_name}_v{pack}"
         custom_packnick = f"{custompack}" or f"{f_name}"
-        packnick = f"☘Anime Sticker Pack☘"
+        packnick = f"🍁{custom_packnick}🍁 - {pack}"
         cmd = "/newpack"
         file = io.BytesIO()
 
@@ -134,8 +134,8 @@ async def kang(args):
                 x = await conv.get_response()
                 while "120" in x.text:
                     pack += 1
-                    packname = f"AnimeSticker{pack}"
-                    packnick = f"☘Anime Sticker Pack☘"
+                    packname = f"{u_name}_v{pack}"
+                    packnick = f"🍁{custom_packnick}🍁 - {pack}"
                     await args.edit(
                         "`Switching to Pack "
                         + str(pack)
